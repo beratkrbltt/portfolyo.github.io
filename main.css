@@ -28,11 +28,13 @@ main {
 }
 
 .profile-container img {
-    max-width: 200px; /* Masaüstü için fotoğraf genişliği */
-    height: auto;
+    max-width: 200px; /* Fotoğrafın maksimum genişliği */
+    height: auto; /* Yüksekliği otomatik ayarla, orantıyı korur */
     border-radius: 10px;
     margin-right: 20px; /* Fotoğraf ile kartlar arasına boşluk */
+    object-fit: cover; /* Fotoğrafın en/boy oranını korur */
 }
+
 
 .cards {
     display: flex;
